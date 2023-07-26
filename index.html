@@ -43,16 +43,19 @@
 
     <header class="font-lato">
 
-        <nav class="container mx-auto px-8 md:px-16 lg:px-24 py-5 md:my-10 ">
+        <nav class="container mx-auto px-8 md:px-16 lg:px-24 py-5 md:my-10">
             <div
-                class="navbar  md:bg-primary-color rounded-full lg:p-3 md:justify-center justify-between lg:p-3 md:gap-0 gap-2">
-
-                <ul class="menu menu-horizontal px-1 text-white font-medium hidden md:block lg:flex md:flex">
-                    <li><a class=" hover:text-white">Home</a></li>
-                    <li><a class=" hover:text-white">About Us</a></li>
-                    <li><a class=" hover:text-white">Shop</a></li>
-                    <li><a class=" hover:text-white">All Fruits</a></li>
-                </ul>
+                class="navbar  md:bg-primary-color rounded-full lg:p-3 md:justify-center justify-between lg:p-3 md:gap-0 gap-2 ">
+                <div class="navbar-start">
+                    <div class=" hidden lg:flex ">
+                        <ul class=" menu menu-horizontal px-1 text-lg font-medium text-white">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="lg:mx-56 ml-[-1.5rem] md:ml-0">
                     <img class="lg:w-10 w-7" src="./images/logo.png" alt="">
                     <div class="">
@@ -102,8 +105,8 @@
             <div class="carousel w-full">
 
                 <!-- Slider 1 -->
-                <div id="slide1" class="carousel-item relative w-full ">
-                    <img src="./images/banner1.png" class="w-full rounded-lg" />
+                <div id="slide1" class="bg-black carousel-item relative w-full ">
+                    <img src="./images/banner1.png" class="opacity-50 h-[10rem] md:h-auto w-full rounded-lg" />
                     <div
                         class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
                         <a href="#slide4"
@@ -124,8 +127,8 @@
 
                 <!-- slider 2 -->
 
-                <div id="slide2" class="carousel-item relative w-full ">
-                    <img src="./images/banner2.png" class="w-full rounded-lg" />
+                <div id="slide2" class="bg-black carousel-item relative w-full ">
+                    <img src="./images/banner2.png" class="opacity-50 h-[10rem] md:h-auto w-full rounded-lg" />
                     <div
                         class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
                         <a href="#slide1"
@@ -145,8 +148,8 @@
 
                 <!-- slider 3 -->
 
-                <div id="slide3" class="carousel-item relative w-full ">
-                    <img src="./images/banner3.png" class="w-full rounded-lg" />
+                <div id="slide3" class="bg-black carousel-item relative w-full ">
+                    <img src="./images/banner3.png" class="opacity-50 h-[10rem] md:h-auto w-full rounded-lg" />
                     <div
                         class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
                         <a href="#slide2"
@@ -164,8 +167,8 @@
 
                     <!-- slider 4 -->
 
-                    <div id="slide4" class="carousel-item relative w-full ">
-                        <img src="./images/banner4.png" class="w-full rounded-lg" />
+                    <div id="slide4" class="bg-black carousel-item relative w-full ">
+                        <img src="./images/banner4.png" class="opacity-50 h-[10rem] md:h-auto w-full rounded-lg" />
                         <div
                             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
                             <a href="#slide3"
@@ -190,28 +193,106 @@
                     <div
                         class="flex justify-around items-center w-3/5 h-36  rounded-lg shadow-xl text-xl text-[#121212] font-lato font-medium text-center absolute left-[19rem] bottom-[-3.25rem] lg:left-[19rem] lg:bottom-[-3.25rem] bg-white">
                         <div class="items-center">
-                            <img class="lg:w-24 w-16" src="./images/fruit1.png" alt="Strawberry">
-                            <p class="font-medium text-xl">Strawberry</p>
+                            <img class="lg:h-[5rem] md:h-[3rem] lg:w-24 w-16" src="./images/fruit1.png"
+                                alt="Strawberry">
+                            <p class="font-medium lg:text-xl sm:text-base">Strawberry</p>
                         </div>
                         <div class="items-center">
-                            <img class="lg:w-24 w-[]" src="./images/fruit2.png" alt="Orange">
-                            <p class="font-medium text-xl">Orange</p>
+                            <img class="lg:h-[5rem] md:h-[3rem] lg:w-24 w-16" src="./images/fruit2.png" alt="Orange">
+                            <p class="font-medium lg:text-xl sm:text-base">Orange</p>
                         </div>
                         <div class="items-center">
-                            <img class=" lg:w-24 w-16" src="./images/fruit3.png" alt="Mango">
-                            <p class="font-medium text-xl">Mango</p>
+                            <img class="lg:h-[5rem] md:h-[3rem] lg:w-24 w-16" src="./images/fruit3.png" alt="Mango">
+                            <p class="font-medium lg:text-xl sm:text-base">Mango</p>
                         </div>
                         <div class="items-center">
-                            <img class=" lg:w-24 w-16" src="./images/fruit4.png" alt="Strawberry">
-                            <p class="font-medium text-xl">Strawberry</p>
+                            <img class="lg:h-[5rem] md:h-[3rem] lg:w-24 w-16" src="./images/fruit4.png"
+                                alt="Strawberry">
+                            <p class="font-medium lg:text-xl sm:text-base">Strawberry</p>
                         </div>
                         <div class="items-baseline">
-                            <img class="lg:w-24 w-16" src="./images/fruit5.png" alt="Mango">
-                            <p class="font-medium text-xl">Mango</p>
+                            <img class="lg:h-[5rem] md:h-[3rem] lg:w-24 w-16" src="./images/fruit5.png" alt="Mango">
+                            <p class="font-medium lg:text-xl sm:text-base">Mango</p>
                         </div>
                     </div>
                 </div>
         </section>
+        <!-- Deal Section -->
+
+
+        <section class="container mx-auto px-8 md:px-16 lg:px-24 py-5 md:my-36">
+            <div class="flex items-center lg:gap-64 md:gap-16 gap-6 flex-col md:flex-row text-center lg:text-justify">
+
+                <div class="flex-1">
+                    <h1 class="text-[#121212] md:text-5xl text-xl font-extrabold ">Deal of the day</h1>
+                    <p class="font-medium md:text-base text-sm text-[#121212] md:mt-6 mt-3">Contrary to popular belief,
+                        is
+                        not simply
+                        random text.
+                        It has
+                        roots in a
+                        piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class=" flex-1">
+                    <div class="flex md:justify-end justify-center md:scale-100 font-extrabold scale-75">
+                        <div class="grid grid-flow-col md:gap-5 text-center auto-cols-max">
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:29;"></span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                            stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                days
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:15;"></span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                            stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                hours
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:25;"></span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                            stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                min
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:08;"></span>
+                                </span>
+                                sec
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </section>
+        <!-- Deal card -->
+
 
 
 
