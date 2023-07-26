@@ -40,24 +40,10 @@
 
     <header>
 
-        <nav>
-            <div class="navbar bg-base-100 bg-pink-600">
-                <div class="dropdown dropdown-bottom">
-                    <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h7" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
-                </div>
-                <ul class="menu menu-horizontal px-1 text-white">
+        <nav class="container mx-auto px-8 md:px-16 lg:px-24 py-5 md:my-10">
+            <div class="navbar  md:bg-pink-600 rounded-full lg:p-3 md:justify-center">
+
+                <ul class="menu menu-horizontal px-1 text-white hidden md:block lg:flex md:flex">
                     <li><a>Home</a></li>
                     <li><a>About Us</a></li>
                     <li><a>Shop</a></li>
@@ -65,11 +51,26 @@
                 </ul>
                 <img src="./images/logo.png" alt="">
                 <div class="">
-                    <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
+                    <a class="btn btn-ghost normal-case text-xl md:text-white text-black">Fruit Burst</a>
                 </div>
-                <div class="flex-none gap-2">
+                <div class="dropdown dropdown-end ">
+                    <label tabindex="0" class="btn btn-ghost btn-circlepl-16 md:pl-72l0g:pl-0 lg:hidden md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 ">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-row gap-2 hidden lg:block">
                     <div class="bg-white p-3  rounded-full flex justify-around items-center ">
-                        <input class="lg:w-80 lg:px-4" type="search" placeholder="Search here"><svg
+                        <input class="lg:w-80 lg:px-4 " type="search" placeholder="Search here"><svg
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -78,6 +79,10 @@
                     </div>
 
                 </div>
+
+
+
+
             </div>
             <!-- try -->
 
