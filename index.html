@@ -29,6 +29,9 @@
                     colors: {
                         'bg-btn': '#E76F51',
                         'primary-color': '#F85559',
+                        'slider-btn-bg': '#121212',
+                        'slider-one': '#121212 0%',
+                        'slider-two': 'rgba(18, 18, 18, 0.00) 100%)'
                     }
                 }
             }
@@ -41,26 +44,28 @@
     <header class="font-lato">
 
         <nav class="container mx-auto px-8 md:px-16 lg:px-24 py-5 md:my-10 ">
-            <div class="navbar  md:bg-primary-color rounded-full lg:p-3 md:justify-center justify-center lg:p-3">
+            <div
+                class="navbar  md:bg-primary-color rounded-full lg:p-3 md:justify-center justify-between lg:p-3 md:gap-0 gap-2">
 
-                <ul class="menu menu-horizontal px-1 text-white hidden md:block lg:flex md:flex">
+                <ul class="menu menu-horizontal px-1 text-white font-medium hidden md:block lg:flex md:flex">
                     <li><a class=" hover:text-white">Home</a></li>
                     <li><a class=" hover:text-white">About Us</a></li>
                     <li><a class=" hover:text-white">Shop</a></li>
                     <li><a class=" hover:text-white">All Fruits</a></li>
                 </ul>
-                <div class="lg:mx-56">
+                <div class="lg:mx-56 ml-[-1.5rem] md:ml-0">
                     <img class="lg:w-10 w-7" src="./images/logo.png" alt="">
                     <div class="">
-                        <a class="btn btn-ghost normal-case text-xl md:text-white text-black text-5xl">Fruit Burst</a>
+                        <a class="btn btn-ghost normal-case text-xl md:text-white text-black text-5xl font-bold">Fruit
+                            Burst</a>
                     </div>
                 </div>
                 <div class="dropdown dropdown-end ">
-                    <label tabindex="0" class="btn btn-ghost btn-circlepl-16 md:pl-72l0g:pl-0 lg:hidden md:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h7" />
+                    <label tabindex="0"
+                        class="mr-[-2rem] btn btn-ghost btn-circlepl-16 md:pl-72l0g:pl-0 lg:hidden md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </label>
                     <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 ">
@@ -91,8 +96,124 @@
         </nav>
 
     </header>
+    <!-- slider container -->
+    <main class="font-lato ">
+        <section class="lg:container lg:mx-auto px-4 md:px-16 lg:px-24 py-5 md:my-10 relative   ">
+            <div class="carousel w-full">
 
-    <main class="font-lato">
+                <!-- Slider 1 -->
+                <div id="slide1" class="carousel-item relative w-full ">
+                    <img src="./images/banner1.png" class="w-full rounded-lg" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                        <a href="#slide4"
+                            class="btn btn-circle bg-[#302c2c] text-white border-none hover:bg-transparent ">❮</a>
+                        <div class="text-center lg:space-y-6 text-white">
+                            <h1 class="text-2xl lg:text-7xl  font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                            <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
+                            <button
+                                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary-color text-white border-none lg:rounded-lg rounded">Shop
+                                Now</button>
+                        </div>
+                        <a href="#slide2"
+                            class="btn btn-circle bg-[#302c2c] text-white  border-none hover:bg-transparent">❯</a>
+                    </div>
+
+                </div>
+
+
+                <!-- slider 2 -->
+
+                <div id="slide2" class="carousel-item relative w-full ">
+                    <img src="./images/banner2.png" class="w-full rounded-lg" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                        <a href="#slide1"
+                            class="btn btn-circle bg-[#302c2c] text-white border-none hover:bg-transparent ">❮</a>
+                        <div class="text-center lg:space-y-6 text-white">
+                            <h1 class="text-2xl lg:text-7xl  font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                            <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
+                            <button
+                                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary-color text-white border-none lg:rounded-lg rounded">Shop
+                                Now</button>
+                        </div>
+                        <a href="#slide3"
+                            class="btn btn-circle bg-[#302c2c] text-white  border-none hover:bg-transparent">❯</a>
+                    </div>
+
+                </div>
+
+                <!-- slider 3 -->
+
+                <div id="slide3" class="carousel-item relative w-full ">
+                    <img src="./images/banner3.png" class="w-full rounded-lg" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                        <a href="#slide2"
+                            class="btn btn-circle bg-[#302c2c] text-white border-none hover:bg-transparent ">❮</a>
+                        <div class="text-center lg:space-y-6 text-white">
+                            <h1 class="text-2xl lg:text-7xl  font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                            <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
+                            <button
+                                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary-color text-white border-none lg:rounded-lg rounded">Shop
+                                Now</button>
+                        </div>
+                        <a href="#slide4"
+                            class="btn btn-circle bg-[#302c2c] text-white  border-none hover:bg-transparent">❯</a>
+                    </div>
+
+                    <!-- slider 4 -->
+
+                    <div id="slide4" class="carousel-item relative w-full ">
+                        <img src="./images/banner4.png" class="w-full rounded-lg" />
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                            <a href="#slide3"
+                                class="btn btn-circle bg-[#302c2c] text-white border-none hover:bg-transparent ">❮</a>
+                            <div class="text-center lg:space-y-6 text-white">
+                                <h1 class="text-2xl lg:text-7xl  font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                                <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
+                                <button
+                                    class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary-color text-white border-none lg:rounded-lg rounded">Shop
+                                    Now</button>
+                            </div>
+                            <a href="#slide1"
+                                class="btn btn-circle bg-[#302c2c] text-white  border-none hover:bg-transparent">❯</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="hidden md:block">
+                    <div
+                        class="flex justify-around items-center w-3/5 h-36  rounded-lg shadow-xl text-xl text-[#121212] font-lato font-medium text-center absolute left-[19rem] bottom-[-3.25rem] lg:left-[19rem] lg:bottom-[-3.25rem] bg-white">
+                        <div class="items-center">
+                            <img class="lg:w-24 w-16" src="./images/fruit1.png" alt="Strawberry">
+                            <p class="font-medium text-xl">Strawberry</p>
+                        </div>
+                        <div class="items-center">
+                            <img class="lg:w-24 w-[]" src="./images/fruit2.png" alt="Orange">
+                            <p class="font-medium text-xl">Orange</p>
+                        </div>
+                        <div class="items-center">
+                            <img class=" lg:w-24 w-16" src="./images/fruit3.png" alt="Mango">
+                            <p class="font-medium text-xl">Mango</p>
+                        </div>
+                        <div class="items-center">
+                            <img class=" lg:w-24 w-16" src="./images/fruit4.png" alt="Strawberry">
+                            <p class="font-medium text-xl">Strawberry</p>
+                        </div>
+                        <div class="items-baseline">
+                            <img class="lg:w-24 w-16" src="./images/fruit5.png" alt="Mango">
+                            <p class="font-medium text-xl">Mango</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
 
 
     </main>
@@ -100,7 +221,7 @@
 
 
 
-    <footer class="font-lato">
+    <footer class=" font-lato">
 
 
 
