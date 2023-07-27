@@ -43,60 +43,108 @@
 
     <header class="font-lato">
 
-        <nav class="container mx-auto px-8 md:px-16 lg:px-24 py-5 md:my-10">
-            <div
-                class="navbar md:bg-primary-color rounded-full md:justify-center justify-between lg:p-3 md:gap-0 gap-2 ">
-                <div class="navbar-start">
-                    <div class=" hidden lg:flex ">
-                        <ul class=" menu menu-horizontal px-1 text-lg font-medium text-white">
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
-                        </ul>
+
+
+        <nav>
+
+            <div class="container mx-auto px-8 md:px-16 lg:px-24">
+
+                <div class="navbar lg:bg-primary-color my-5 lg:my-12 lg:rounded-full">
+
+
+                    <div class="navbar-start">
+
+                        <div class="hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navbar-center">
+                        <div class="pr-44 md:pr-0 lg:pr-0">
+                            <a class="flex items-center gap-4"><img class="w-8 lg:w-fit" src="./images/logo.png" alt="">
+                                <p class="text-xl lg:text-[40px] font-bold lg:text-white">Fruit Burst</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-end">
+
+                        <div class="form-control hidden lg:flex">
+                            <div class="flex items-center">
+                                <div class="flex flex-row gap-2 hidden lg:block">
+                                    <div class="bg-white p-3  rounded-full flex justify-around items-center ">
+                                        <input class="lg:w-80 lg:px-4" type="search" placeholder="Search here"><svg
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown dropdown-end">
+                            <label class="btn btn-ghost swap swap-rotate lg:hidden">
+
+
+                                <input type="checkbox">
+
+                                <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 512 512">
+                                    <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z">
+                                    </path>
+                                </svg>
+
+
+                                <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 512 512">
+                                    <polygon
+                                        points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49">
+                                    </polygon>
+                                </svg>
+
+                            </label>
+                            <ul tabindex="0"
+                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-72  text-sm font-light">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                                <li>
+                                    <div class="flex flex-row gap-2 hidden lg:block">
+                                        <div class="bg-white p-3  rounded-full flex justify-around items-center ">
+                                            <input class="lg:w-80 lg:px-4" type="search" placeholder="Search here"><svg
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z">
+                                                </path>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="lg:mx-56 ml-[-1.5rem] md:ml-0">
-                    <img class="lg:w-10 w-7" src="./images/logo.png" alt="">
-                    <div class="">
-                        <a class="btn btn-ghost normal-case text-xl md:text-white text-black text-5xl font-bold">Fruit
-                            Burst</a>
-                    </div>
-                </div>
-                <div class="dropdown dropdown-end ">
-                    <label tabindex="0"
-                        class="mr-[-2rem] btn btn-ghost btn-circlepl-16 md:pl-72l0g:pl-0 lg:hidden md:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 ">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-row gap-2 hidden lg:block">
-                    <div class="bg-white p-3  rounded-full flex justify-around items-center ">
-                        <input class="lg:w-80 lg:px-4" type="search" placeholder="Search here"><svg
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                        </svg>
-                    </div>
-
-                </div>
-
-
-
 
             </div>
-            <!-- try -->
-
         </nav>
+
+
+
+
+
+
+
+
 
     </header>
     <!-- slider container -->
@@ -113,7 +161,7 @@
                             class="btn btn-circle bg-[#302c2c] text-white border-none hover:bg-transparent ">❮</a>
                         <div class="text-center lg:space-y-6 text-white">
                             <h1 class="text-2xl lg:text-7xl  font-extrabold">Exotic tastes at your <br>doorstep</h1>
-                            <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
+                            <p class="text-sm lg:text-xl md:py-3 ">We supply highly quality organic products</p>
                             <button
                                 class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary-color text-white border-none lg:rounded-lg rounded">Shop
                                 Now</button>
@@ -135,7 +183,7 @@
                             class="btn btn-circle bg-[#302c2c] text-white border-none hover:bg-transparent ">❮</a>
                         <div class="text-center lg:space-y-6 text-white">
                             <h1 class="text-2xl lg:text-7xl  font-extrabold">Exotic tastes at your <br>doorstep</h1>
-                            <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
+                            <p class="text-sm lg:text-xl md:py-3">We supply highly quality organic products</p>
                             <button
                                 class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary-color text-white border-none lg:rounded-lg rounded">Shop
                                 Now</button>
@@ -156,7 +204,7 @@
                             class="btn btn-circle bg-[#302c2c] text-white border-none hover:bg-transparent ">❮</a>
                         <div class="text-center lg:space-y-6 text-white">
                             <h1 class="text-2xl lg:text-7xl  font-extrabold">Exotic tastes at your <br>doorstep</h1>
-                            <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
+                            <p class="text-sm lg:text-xl md:py-3">We supply highly quality organic products</p>
                             <button
                                 class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary-color text-white border-none lg:rounded-lg rounded">Shop
                                 Now</button>
@@ -175,7 +223,7 @@
                                 class="btn btn-circle bg-[#302c2c] text-white border-none hover:bg-transparent ">❮</a>
                             <div class="text-center lg:space-y-6 text-white">
                                 <h1 class="text-2xl lg:text-7xl  font-extrabold">Exotic tastes at your <br>doorstep</h1>
-                                <p class="text-sm lg:text-xl">We supply highly quality organic products</p>
+                                <p class="text-sm lg:text-xl md:py-3">We supply highly quality organic products</p>
                                 <button
                                     class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-primary-color text-white border-none lg:rounded-lg rounded">Shop
                                     Now</button>
@@ -191,7 +239,7 @@
 
                 <div class="hidden md:block">
                     <div
-                        class="flex justify-around items-center w-3/5 h-36  rounded-lg shadow-xl text-xl text-[#121212] font-lato font-medium text-center absolute left-[19rem] bottom-[-3.25rem] lg:left-[19rem] lg:bottom-[-3.25rem] bg-white">
+                        class="flex justify-around items-center w-3/5 h-36  rounded-lg shadow-xl text-xl text-[#121212] font-lato font-medium text-center absolute left-[19rem] bottom-[-3.25rem] lg:left-[19rem] lg:bottom-[-3.25rem] bg-white lg:flex md:hidden">
                         <div class="items-center">
                             <img class="lg:h-[5rem] md:h-[3rem] lg:w-24 w-16" src="./images/fruit1.png"
                                 alt="Strawberry">
@@ -220,7 +268,7 @@
         <!-- Deal Section -->
 
 
-        <section class="container mx-auto px-8 md:px-16 lg:px-24 py-5 md:my-36">
+        <section class="container mx-auto px-8 md:px-16 lg:px-24 lg:py-5 lg:my-36">
             <div class="flex items-center lg:gap-64 md:gap-16 gap-6 flex-col md:flex-row text-center lg:text-justify">
 
                 <div class="flex-1">
@@ -293,7 +341,7 @@
         </section>
         <!-- Deal card -->
 
-        <section class="container mx-auto px-8 md:px-16 lg:px-24 py-5 md:my-36">
+        <section class="container mx-auto px-8 md:px-16 lg:px-24 lg:py-5  md:my-14 lg:my-36">
 
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-10 space-y-4 md:space-y-0">
@@ -374,6 +422,8 @@
                                                         <button
                                                             class="btn text-base font-black text-[#F85559] bg-white border-2 border-[#F85559] text-primary-bg hover:bg-[#F85559] hover:text-white hover:border-primary-bg">Buy
                                                             Now</button>
+
+
                                                     </div>
                                                 </div>
                                             </form>
@@ -878,7 +928,7 @@
                 <a href=""><img src="./images/youtube.svg" alt=""></a>
                 <a href=""> <img src="./images/linkedin-f.svg" alt=""></a>
                 <a href=""> <img src="./images/instagram.svg" alt=""></a>
-                <a href=""> <img src="./images/instagram.svg" alt=""></a>
+                <a href=""> <img src="./images/apple.svg" alt=""></a>
             </div>
         </div>
 
